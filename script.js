@@ -1,2 +1,15 @@
-// Optional: Add future interactivity here
-console.log("JFLOW FPV site loaded.");
+// Reveal elements on scroll
+function revealOnScroll() {
+  const elements = document.querySelectorAll('.fade-in, .hero-content');
+  const windowHeight = window.innerHeight;
+
+  elements.forEach(el => {
+    const elementTop = el.getBoundingClientRect().top;
+    if (elementTop < windowHeight - 100) {
+      el.classList.add('visible');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
