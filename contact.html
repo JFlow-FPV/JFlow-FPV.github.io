@@ -22,9 +22,12 @@
     </div>
   </header>
 
-  <section>
+  <section class="fade-in">
     <h2>Contact Me</h2>
-    <form action="mailto:jflowfpv@gmail.com" method="post" enctype="text/plain">
+    <p>Have a project in mind? Let’s make it happen. Fill out the form below and I’ll get back to you as soon as possible.</p>
+
+    <!-- Replace "yourFormID" with your Formspree endpoint -->
+    <form action="https://formspree.io/f/yourFormID" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" placeholder="Project Details" required></textarea>
@@ -32,8 +35,18 @@
     </form>
   </section>
 
+  <section class="fade-in">
+    <h2>Connect With Me</h2>
+    <ul>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">YouTube</a></li>
+      <li><a href="#">Facebook</a></li>
+    </ul>
+  </section>
+
   <footer>
     <p>© 2025 JFLOW FPV — Brisbane, QLD</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
