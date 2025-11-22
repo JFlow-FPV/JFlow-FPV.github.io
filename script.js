@@ -11,5 +11,8 @@ function revealOnScroll() {
   });
 }
 
+// Run on scroll and on page load
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
+
+console.log("JFLOW FPV site loaded with animations.");
